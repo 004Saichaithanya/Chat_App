@@ -48,12 +48,19 @@ Whenever a user sends a message:
 * Real-time communication without page reloads.
 * Lightweight, clean, and beginner-friendly code.
 * Smart simulated bots to make chat interactive.
-* Easy to deploy on Node.js-compatible hosting platforms (like **Render** or **Railway**).
+* Easy to deploy on Node.js-compatible hosting platforms.
 * Can be extended with features like chat rooms, message persistence, and authentication.
 
 ---
 
-## 🚀 How to Run Locally
+## 🚀 Live Demo
+
+Check out the live app here:
+👉 [https://chat-app-4nio.onrender.com](https://chat-app-4nio.onrender.com)
+
+---
+
+## 💻 How to Run Locally
 
 1️⃣ Install dependencies:
 
@@ -77,21 +84,32 @@ Open in multiple tabs to test real-time messaging.
 
 ---
 
-## 🌐 Deployment
+## 🌐 Deployment Instructions (Render.com)
 
-> ⚠️ **Note:** This app cannot be hosted on GitHub Pages as it requires a Node.js backend and WebSocket server.
+### 📦 Steps:
 
-✅ Recommended hosting:
+1. Push your complete project to a **GitHub repository**
 
-* **Render.com**
-* **Railway.app**
-* **Glitch.com** (for quick testing)
+2. Go to [https://render.com](https://render.com) and sign in
 
-**Start Command for hosting:**
+3. Click **New +** → **Web Service**
 
-```
-node server.js
-```
+4. Connect your GitHub repository containing this project
+
+5. Configure your Web Service:
+
+   * **Name**: your choice (e.g. `chat-app`)
+   * **Environment**: `Node`
+   * **Build Command**: *(leave empty or type `npm install` if asked)*
+   * **Start Command**:
+
+     ```
+     node server.js
+     ```
+
+6. Click **Create Web Service** and wait for deployment to complete
+
+7. Access your live app via the public URL provided by Render (like [https://chat-app-4nio.onrender.com](https://chat-app-4nio.onrender.com))
 
 ---
 
