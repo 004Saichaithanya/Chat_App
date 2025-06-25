@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+#chat-container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h2 {
+  color: crimson;
+}
+
+#username {
+  padding: 8px;
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+#messages {
+  list-style-type: none;
+  padding: 0;
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #333;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#messages li {
+  padding: 5px 10px;
+}
+
+#chat-form {
+  display: flex;
+}
+
+#chat-form input {
+  flex: 1;
+  padding: 10px;
+}
+
+#chat-form button {
+  padding: 10px;
+  background: crimson;
+  color: #fff;
+  border: none;
+}
